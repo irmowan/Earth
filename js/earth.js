@@ -23,6 +23,7 @@ scene.add(light);
 
 var earthGeo = new THREE.SphereGeometry(30, 40, 400),
     earthMat = new THREE.MeshPhongMaterial();
+earthMat.map = THREE.ImageUtils.loadTexture('img/earth.jpg');
 
 var earthMesh = new THREE.Mesh(earthGeo, earthMat);
 earthMesh.position.set(-100, 0, 0);
