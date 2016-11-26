@@ -31,6 +31,14 @@ earthMesh.rotation.y = 5;
 scene.add(earthMesh);
 camera.lookAt(earthMesh.position);
 
+var starGeo = new THREE.SphereGeometry(3000, 10, 100),
+    starMat = new THREE.MeshBasicMaterial();
+starMat.map = THREE.ImageUtils.loadTexture('img/star-field.png');
+starMat.side = THREE.BackSide;
+
+var starMesh = new THREE.Mesh(starGeo, starMat);
+scene.add(starMesh);
+
 var renderer = new THREE.WebGLRenderer({antialiasing: true});
 renderer.setSize(WIDTH, HEIGHT);
 renderer.domElement.style.position = 'relative';
