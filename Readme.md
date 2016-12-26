@@ -52,6 +52,6 @@ MIT License
 
 ------
 
-Author: [irmo<irmowan@gmail.com>](https://github.com/irmowan)
+Author: [irmo](https://github.com/irmowan)
 
 Date: 2016.11
